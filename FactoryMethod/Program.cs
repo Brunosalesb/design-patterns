@@ -1,11 +1,10 @@
 ﻿using FactoryMethod;
 
-var urbanBus = new UrbanBusCompany();
-var interstateBus = new InterstateBusCompany();
+UrbanBusCompany urbanBusCompany = new UrbanBusCompany();
+InterstateBusCompany interstateBusCompany = new InterstateBusCompany();
 
-var urbanTicket = urbanBus.IssueTicket("Piccadilly Circus","Camden Town");
-var interstateTicket = interstateBus.IssueTicket("Los Angeles, CA","Las Vegas, NV");
+Ticket urbanTicket = urbanBusCompany.IssueTicket("Piccadilly Circus","Camden Town");
+Ticket interstateTicket = interstateBusCompany.IssueTicket("Los Angeles, CA","Las Vegas, NV");
 
 urbanTicket.ShowDetails();
 interstateTicket.ShowDetails();
-
