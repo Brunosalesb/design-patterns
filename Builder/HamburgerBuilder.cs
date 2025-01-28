@@ -1,5 +1,3 @@
-using System;
-
 namespace Builder;
 
 public class HamburgerBuilder : SandwichBuilder
